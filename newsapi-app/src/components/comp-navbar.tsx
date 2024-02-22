@@ -5,12 +5,9 @@ import { FaStickerMule } from "react-icons/fa";
 import { RequestCookie } from "next/dist/compiled/@edge-runtime/cookies";
 
 export default function NavBar() {
-  // console.log(isLoggedIn, "<<<<<<FROM NAVBAR");
   return (
     <>
-      <div id="NAVBAR-MOTHER" className="navbar bg-black sticky top-0 z-50">
-        {/* NAVBAR KIRI */}
-
+      <div className="navbar bg-black sticky top-0 z-50">
         <div className="navbar-start flex">
           <Link href="/">
             <p className="btn btn-ghost text-xl text-white">
@@ -20,12 +17,9 @@ export default function NavBar() {
           </Link>
         </div>
 
-        {/* TITLE */}
-        <div className="navbar-center"></div>
-
         <div className="navbar-end flex">
           <form className="flex w-96">
-          {/* <form className="flex" onSubmit={handleSearch}> */}
+            {/* <form className="flex w-96" onSubmit={handleSearch}> */}
             <input
               type="text"
               placeholder="search news"
