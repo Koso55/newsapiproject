@@ -19,8 +19,8 @@ export default function CardVertical({ sportsNews }: { sportsNews: NewsType }) {
                 className="h-20"
               />
               <div>
-                <p className="">{article.title || "Unknown"}</p>
-                <p>{reformatPublishedAt(`${article.publishedAt}`)}</p>
+                <p className="card-title text-sm line-clamp-2">{article.title || "Unknown"}</p>
+                <p className="text-xs">{reformatPublishedAt(`${article.publishedAt}`)}</p>
               </div>
             </div>
           </Link>
