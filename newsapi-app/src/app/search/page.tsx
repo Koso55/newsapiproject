@@ -1678,7 +1678,7 @@ export default function SearchPage() {
         method: "get",
         url: `/everything?q=${query.q}&pageSize=100`,
         headers: {
-          Authorization: `Bearer 5ac38f11cb874b7a943164d025cba3ae`,
+          Authorization: `Bearer ${process.env.NEWSAPI_KEY}`,
         },
       });
       setSearchResult(data);
